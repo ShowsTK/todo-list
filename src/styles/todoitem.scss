@@ -1,0 +1,32 @@
+.data {
+  &__task {
+    display: flex;
+    align-items: center;
+  }
+  &__caption {
+    &-note, &-task {
+    }
+    &-note {
+      width: 100%;
+    }
+    &-status {
+      flex-grow: 0;
+    }
+    &-task {
+      flex-grow: 1;
+    }
+  }
+}
+
+.caption {
+  font-weight: 600;
+}
+.buttons {
+  margin: 10px 0;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

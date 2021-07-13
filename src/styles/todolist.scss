@@ -1,0 +1,63 @@
+@import '../styles/vars';
+
+li {
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    background: #e2fff3;
+  }
+  .caption {
+    font-weight: 900;
+    &:first-letter {
+      text-transform: uppercase;
+      }
+  }
+  .done {
+    text-decoration: line-through;
+  }
+  .total {
+    font-size: 10px;
+    margin-top: 0;
+  }
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.info, .start-controls {
+  text-align: center;
+}
+
+.h3 {
+  background-color: darken($base-color-back, 50%);
+  color: #fff;
+  border-radius: $border-radius-general;
+}
+
+.buttons {
+  flex-basis: 165px;
+  flex-shrink: 0;
+}
+.list-notes li {
+  border-bottom: 1px solid rgba(13, 13, 13, 0.17);
+}
+
+@media screen and (max-width: 800px) {
+  .h3 {
+    font-size: 1em;
+  }
+  .buttons {
+    flex-basis: 80px;
+  }
+  .btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .info-item {
+    display: block;
+  }
+}
